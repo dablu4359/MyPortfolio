@@ -38,62 +38,64 @@
             color: black;
             font-weight: bold;
         }
-        /* Project Section */
-        .project{
-            margin-top: 50px;
-            width: 100%;
-            height: 1100px;
+        /* main */
+        .main{
+            width: 90%;
+            height: 1060px;
         }
-        .project-heading{
-            color: white;
-            padding: 50px;
-            margin-bottom: 30px;
+        /* main left */
+        .left{
+            width: 60%;
+            height: 800px;
+            float: left;
             text-align: center;
-            text-transform: uppercase;
-            font-size: 25px;
-            font-weight: bold;
+            margin-top: 150px;
         }
-        .project1{
-            background-repeat: no-repeat;
-            position: relative;
-            margin-left: 5%;
-            width: 45%;
-            height: 400px;
-            float: left;
-        }
-        .project2{
-            position: relative;
-            margin-right: 5%;
-            width: 45%;
-            height: 400px;
-            float: left;
-        }
-        .project3{
-            position: relative;
-            margin-left: 5%;
-            width: 45%;
-            height: 400px;
-            float: left;
-        }
-        .project4{
-            position: relative;
-            margin-right: 5%;
-            width: 45%;
-            height: 400px;
-            float: left;
-        }
-        .project-image{
-            width: 100%;
-            height: 100%;
-            opacity: 70%;
-        }
-        .text-block {
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            background-color: black;
-            padding: 6px;
+        .left h1{
             color: white;
+            font-size: 50px;
+            font-family: Arial, Arial, Helvetica, sans-serif;
+        }
+        .paragraph{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            color: rgb(153, 78, 224);
+            font-size: 20px;
+            font-family: Arial, Arial, Helvetica, sans-serif;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            /* text-align: left; */
+            text-align: justify;
+        }
+        
+        /* main right */
+        .right{
+            width: 40%;
+            height: 800px;
+            float: right;
+        }
+        .right img{
+            height: 500px;
+            margin-top: 200px;
+            margin-left: 30px;
+            border-radius: 50%;
+            box-shadow:#111140 0 0 15px 2px;
+        }
+        .profiles img{
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin-top: 50px;
+            margin-left: 75px;
+            border-radius: 50%;
+        }
+        .caption p{
+            color: white;
+            margin-left: 65px;
+            margin-top: 10px;
+            float: left;
         }
         /* Footer Section */
         .footer{
@@ -190,56 +192,50 @@
                     <a href="/">Extra-Carriculars</a> -->
                 </div>
             </section>
-            
-            <!-- Project Section -->
-            <section class="project">
-                <div class="project-container">
-                    <div class="project-heading">
-                        <h1>Projects</h1>
+
+            <!-- Main Section -->
+            </section>
+                <div class="main">
+                    <!-- main left -->
+                    <div class="left">
+                        <h1>About Me</h1><br>
+    
+                        <div class="paragraph">
+                            <p>I am Dablu Kumar, a final year B.Tech student at IIT Gandhinagar. I am pursuing a major degree in Chemical Engineering, and I am also at the last step of completing a minor in Computer Science and Engineering.</p><br>
+
+                                Throughout my academic journey, I have explored various computer science courses, including DSA, Operating Systems, Databases, and Machine Learning. These courses have provided me with a solid foundation in key areas of computer science. I have also been actively involved in project assignments, including the Food Delivery System, where I successfully implemented the technical knowledge to make a website where one can place orders for home delivery.</p><br>
+                                
+                                Beyond academics, I have actively participated in the volleyball club at IIT Gandhinagar, where I served as a senior member. Through my involvement in the club, I have had the opportunity to organize several sports tournaments and leagues, which have helped me to develop many valuable soft skills. In fact, in the last volleyball league, I was chosen as the captain of my team. I have also proudly represented IIT Gandhinagar as a volleyball player in the 55th Inter IIT Sports Meet organized by IIT Roorkee. These experiences have enhanced my leadership and organizational skills and emphasized the significance of collaboration and effective communication.</p><br>
+                                
+                                Looking ahead, I aim to pursue a career in the IT industry that allows me to combine my technical knowledge with my passion for software development. My strong foundation in programming languages like Python and C++, coupled with the practical experiences I have gained through projects and extracurricular activities, have equipped me with the necessary skills to contribute effectively to an organization.</p><br>
+                                
+                                Yeah, that is all about myself.</p><br>
+                        </div>
+    
                     </div>
-                    <div class="project-content">
+                    <!-- main right -->
+                    <div class="right">
+                        <img src="Images/profile.jpeg" alt="">
 
-                        <div class="project1">
-                            <a href="#">
-                                <img class="project-image" src="Images/DBMS-Project.png" alt="">
-                                <div class="text-block">
-                                    <h4>Food Delivery System</h4>
-                                </div>
-                            </a>
+                        <center style="margin-top: 30px; color: white;">For more details, you can visit my profiles</center>
+                        
+                        <div class="profiles">
+                            <a href="https://www.facebook.com/dablu.kumar.142687"><img src="Images/Facebook.jpg" alt="Facebook"></a>
+                            <a href="https://github.com/dablu4359"><img src="Images/GitHub.png" alt="GitHub"></a>
+                            <a href="https://www.linkedin.com/in/dablu-kumar-b07259181/"><img src="Images/LinkedIn.png" alt="LinkedIn"></a>
+                            <a href="https://twitter.com/DabluKu37456114"><img src="Images/Twitter.png" alt="Twitter"></a>
                         </div>
-
-                        <div class="project2">
-                            <a href="#">
-                                <img class="project-image" src="Images/ML-Project.jpg" alt="">
-                                <div class="text-block">
-                                    <h4>House Price Prediction Model</h4>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="project3">
-                            <a href="#">
-                                <img class="project-image" src="Images/Bot-Project.jpg" alt="">
-                                <div class="text-block">
-                                    <h4>Desktop Voice Assistant</h4>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="project4">
-                            <a href="#">
-                                <img class="project-image" src="Images/Bank-Management-Project.png" alt="">
-                                <div class="text-block">
-                                    <h4>Bank Management System</h4>
-                                </div>
-                            </a>
-                        </div>
+                        
+                        <center class="caption">
+                            <p style="margin-left: 65;">Facebook</p>
+                            <p style="margin-left: 67px;">Github</p>
+                            <p style="margin-left: 73px;">LinkedIn</p>
+                            <p style="margin-left: 70px;">Twitter</p>
+                        </center>
 
                     </div>
                 </div>
-
             </section>
-            <!-- Project Section End -->
 
             <section class="footer">
                 <div class="bottom">

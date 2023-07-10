@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>MyPortfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    </head>
+
+    <style>
+        /* Webpage */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #030323;
+            font-family: Arial, Arial, Helvetica, sans-serif;;
+        }
+        /* navbar */
+        .navbar{ 
+            background-color: #1a1a4f;
+            height: 50px;
+        }
+        .navbar a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Arial, Helvetica, sans-serif;
+        }
+        .navbar a:hover {
+            background-color: #6a82c5;
+            color: black;
+            font-weight: bold;
+        }
+        .PORs{
+            margin-top: 50px;
+            width: 100%;
+            height: 1200px;
+        }
+        .por-heading{
+            color: white;
+            padding: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .vl{
+            border-left: 5px solid blueviolet;
+            height: 200px;
+            margin-left: 50%;
+        }
+        .vle{
+            border-left: 5px solid blueviolet;
+            height: 100px;
+            margin-left: 50%;
+        }
+        .por1-left{
+            margin-left: 2.5%;
+            width: 47.5%;
+            height: 150px;
+            float: left;
+        }
+        .por1-heading{
+            padding-left: 15px;
+            height: 50px;
+            background-color: blueviolet;
+        }
+        .por1-description{
+            padding-top: 5px;
+            padding-left: 5px;
+            height: 50px;
+            background-color: white;
+        }
+        .por1 img{
+            width:100px;
+            height: 100px;
+            float: left;
+            border-radius: 50%;
+            border: 5px solid blueviolet;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .por2 img{
+            width:100px;
+            height: 100px;
+            float: right;
+            border-radius: 50%;
+            border: 5px solid blueviolet;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .por2-right{
+            margin-right: 2.5%;
+            width: 47.1%;
+            height: 150px;
+            float: right;
+        }
+        .por2-heading{
+            padding-left: 5px;
+            height: 50px;
+            background-color: blueviolet;
+        }
+        .por2-description{
+            padding-top: 5px;
+            padding-left: 5px;
+            height: 50px;
+            background-color: white;
+        }
+        .por3-left{
+            margin-left: 2.5%;
+            width: 47.5%;
+            height: 150px;
+            float: left;
+        }
+        .por3-heading{
+            padding-left: 5px;
+            height: 50px;
+            background-color: blueviolet;
+        }
+        .por3-description{
+            padding-top: 5px;
+            padding-left: 5px;
+            height: 50px;
+            background-color: white;
+        }
+        .por3 img{
+            width:100px;
+            height: 100px;
+            float: left;
+            border-radius: 50%;
+            border: 5px solid blueviolet;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .por4 img{
+            width:100px;
+            height: 100px;
+            float: right;
+            border-radius: 50%;
+            border: 5px solid blueviolet;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .por4-right{
+            margin-right: 2.5%;
+            width: 47.1%;
+            height: 150px;
+            float: right;
+        }
+        .por4-heading{
+            padding-left: 5px;
+            height: 50px;
+            background-color: blueviolet;
+        }
+        .por4-description{
+            padding-top: 5px;
+            padding-left: 5px;
+            height: 50px;
+            background-color: white;
+        }
+        .por5-left{
+            margin-left: 2.5%;
+            width: 47.5%;
+            height: 150px;
+            float: left;
+        }
+        .por5-heading{
+            padding-left: 5px;
+            height: 50px;
+            background-color: blueviolet;
+        }
+        .por5-description{
+            padding-top: 5px;
+            padding-left: 5px;
+            height: 50px;
+            background-color: white;
+        }
+        .por5 img{
+            width:100px;
+            height: 100px;
+            float: left;
+            border-radius: 50%;
+            border: 5px solid blueviolet;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        /* Footer Section */
+        .footer{
+            width: 100%;
+            height: 250px;
+            background-color: #1a1a4f;
+        }
+        /* Footer Left */
+        .bottom-left{
+            margin-left: 15%;
+            width: 30%;
+            float: left;
+        }
+        .bottom-left-content{
+            margin-top: 20px;
+            color: white;
+            font-size: 25px;
+        }
+        .quickLinks a{
+            padding-left: 12px;
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            opacity: 70%;
+        }
+        .bottom-left img{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+        /* Footer Middle */
+        .bottom-middle{
+            margin-top: 20px;
+            color: white;
+            font-size: 25px;
+            width: 26%;
+            float: left;
+        }
+        .contact{
+            font-size: 15px;
+            padding-top: 8px;
+            color: white;
+            opacity: 70%;
+        }
+        .contact img{
+            float: left;
+            width: 22px;
+            height: 17px;
+        }
+        .contact h4{
+            float: left;
+            margin-left: 10px;
+        }
+        /* Footer Right */
+        .bottom-right{
+            width: 20%;
+            float: left;
+        }
+        .bottom-right-content{
+            margin-left: 10px;
+            margin-top: 20px;
+            color: white;
+            font-size: 25px;
+        }
+        .contactUs input{
+            padding-left: 3px;
+        }
+        button{
+            font-weight: bold;
+            margin-top: 5px;
+            margin-left: 58px;
+            padding: 3px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+        button:hover{
+            background-color: green;
+            cursor: pointer;
+        }
+
+    </style>
+
+    <body>
+        <main>
+            <!-- Navbar -->
+            <section>
+                <div class="navbar">
+                    <a href="home.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="por.html">PORs</a>
+                    <a href="aboutMe.html">About Me</a>
+                    <!-- <a href="/">Achievements</a>
+                    <a href="/">Extra-Carriculars</a> -->
+                </div>
+            </section>
+            
+            <section>
+                <div>
+                    
+                </div>
+            </section>
+
+            <section class="PORs">
+                <div class="por-container">
+                    <div class="por-heading">
+                        <h1>Positions of Responsibility</h1>
+                    </div>
+                    
+                    <div class="por1">
+                        <div class="por1-left">
+                            <div class="por1-heading">
+                                <h3>Co-ordinator, Navprayas, Student Run Organization</h3>
+                                <h3 style="float: right; padding-right: 80px;"> ~ Manpur, Gaya, Bihar</h3>
+                            </div>
+                            <div class="por1-description">
+                                <p>~ Mentored and guided juniors to contribute to society in the field of education and learning.</p>
+                                <p>~ Sucessfully organized an Aptitude Test (Puzzle Race) and Codemantra (Coding contest).</p>
+                            </div>
+                        </div>
+                        <div class="por1-image">
+                            <img src="Images/np.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="vl"></div>
+
+                    <div class="por2">
+                        <div class="por2-right">
+                            <div class="por1-heading">
+                                <h3>Co-ordinator, Hallabol, Annual Sports Fest</h3>
+                                <h3 style="float: right; padding-right: 200px;"> ~ IIT Gandhinagar</h3>
+                            </div>
+                            <div class="por2-description">
+                                <p>~ Managed foot-volley event with one colleague, coordinated with Conveners and Sports Secretary.</p>
+                                <p>~ Supervised team, managed a crowd of 1000+ people, refereed, and made final result.</p>
+                            </div>
+                        </div>
+                        <div class="por2-image">
+                            <img src="Images/hallabol23.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="vl"></div>
+
+                    <div class="por3">
+                        <div class="por1-left">
+                            <div class="por3-heading">
+                                <h3>Organising Member, Jashn, Annual Cultural Fest</h3>
+                                <h3 style="float: right; padding-right: 160px;"> ~ IIT Gandhinagar</h3>
+                            </div>
+                            <div class="por3-description">
+                                <p>~ Organized Angry Bird event with 3 colleagues, collaborated with co-ordinators and conveners.</p>
+                                <p>~ Steamlined logistics for the event, including scheduling and equipment management.</p>
+                            </div>
+                        </div>
+                        <div class="por3-image">
+                            <img src="Images/Jashn.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="vl"></div>
+
+                    <div class="por4">
+                        <div class="por4-right">
+                            <div class="por4-heading">
+                                <h3>Organising Member, Hallabol, Annual Sports Fest</h3>
+                                <h3 style="float: right; padding-right: 145px;"> ~ IIT Gandhinagar</h3>
+                            </div>
+                            <div class="por4-description">
+                                <p>~ Contributed to the planning and execution of the Annual Sports Fest at IIT Gandhinagar.</p>
+                                <p>~ collaborated to organize the carrom event, managing equipment and matches.</p>
+                            </div>
+                        </div>
+                        <div class="por4-image">
+                            <img src="Images/hallabol21.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="vl"></div>
+
+                    <div class="por5">
+                        <div class="por5-left">
+                            <div class="por5-heading">
+                                <h3>Organising Member, SML, Annual Volleyball League</h3>
+                                <h3 style="float: right; padding-right: 140px;"> ~ IIT Gandhinagar</h3>
+                            </div>
+                            <div class="por5-description">
+                                <p>~ Ensured seamless execution by efficiently managing responsibilities for the SML event.</p>
+                                <p>~ Contributed to the success of the Annual Sports Fest at IIT Gandhinagar.</p>
+                            </div>
+                        </div>
+                        <div class="por5-image">
+                            <img src="Images/sml.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="vle"></div>
+
+                </div>
+            </section>
+
+            <section class="footer">
+                <div class="bottom">
+                    <div class="bottom-left">
+                        <div class="bottom-left-content">
+                            Quick Links
+                            <div class="quickLinks">
+                                <a href="home.html">Home</a><br>
+                                <a href="projects.html">Projects</a><br>
+                                <a href="por.html">PORs</a><br>
+                                <a href="aboutMe.html">About Me</a><br>
+                                <!-- <a href="#">Achievements</a><br>
+                                <a href="#">Extra-Carriculars</a><br> -->
+
+                                <a href="https://www.facebook.com/dablu.kumar.142687"><img src="Images/Facebook.jpg" alt="Facebook"></a>
+                                <a href="https://twitter.com/DabluKu37456114"><img src="Images/Twitter.png" alt="Twitter"></a>
+                                <a href="https://www.linkedin.com/in/dablu-kumar-b07259181/"><img src="Images/LinkedIn.png" alt="LinkedIn"></a>
+                                <a href="https://github.com/dablu4359"><img src="Images/GitHub.png" alt="GitHub"></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom-middle">
+                        <div class="bottom-middle-content">
+                            Contact
+                            <div class="contact">
+                                <img src="Images/home-icon.png" alt="">
+                                <h4>IIT Gandhinagar</h4> <br>
+                                <img src="Images/email-icon.png" alt="">
+                                <h4>dablu4359@gmail.com</h4> <br>
+                                <img src="Images/phone-icon.png" alt="">
+                                <h4>+91 9135901206</h4> <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom-right">
+                        <div class="bottom-right-content">
+                            Any query?
+                            <div class="contactUs">
+                                <input type="text" placeholder="Name"><br>
+                                <input type="number" placeholder="Mobile"><br>
+                                <input type="email" placeholder="Email"><br>
+                                <input type="text" placeholder="Type your query"><br>
+                                <button>Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </body>
+</html>
